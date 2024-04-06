@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --text: #120416;
+    --background: #fbf2fd;
+    --primary: #b334da;
+    --secondary: #e986a9;
+    --accent: #e36870;
+  }
+  .dark {
+    --text: #f7e9fb;
+    --background: #0b020d;
+    --primary: #a425cb;
+    --secondary: #791639;
+    --accent: #971c24;
+  }
+}
+
 @font-face {
   font-family: "Poppins";
   src: url("/Poppins/Poppins-Black.ttf") format("truetype");

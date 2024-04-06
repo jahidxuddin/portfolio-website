@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "@/components/navbar";
 
 export const metadata: Metadata = {
   title: "Jahid Uddin",
-  description: "This website shows my projects as a hobby developer.",
+  description: "Diese Webseite zeigt meine Projekte als Hobby Entwickler.",
 };
 
 export default function RootLayout({
@@ -13,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      <body>{children}</body>
+      <body className="bg-background text-text">
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
