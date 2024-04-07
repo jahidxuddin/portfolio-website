@@ -9,14 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.105.2",
+    "@react-three/fiber": "^8.16.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "framer-motion": "^11.0.25",
     "lucide-react": "^0.365.0",
+    "maath": "^0.10.7",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-tilt": "^1.0.2",
     "tailwind-merge": "^2.2.2",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "three": "^0.163.0"
   },
   "devDependencies": {
     "@types/node": "^20",
