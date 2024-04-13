@@ -7,6 +7,7 @@ import algorithmVisualisations from "@/../public/img/algorithm-visualisations.pn
 import flsVplanApp from "@/../public/img/fls-vplan-app.png";
 import ContactForm from "@/components/contact-form";
 import Link from "next/link";
+import React from "react";
 
 export default function Home() {
   return (
@@ -71,6 +72,9 @@ export default function Home() {
       <section id="contact" className="h-screen grid place-items-center px-10 sm:px-32 lg:px-0">
         <ContactForm/>
       </section>
+      <footer className="p-10">
+        <Link href="/impressum" className="transition-all hover:underline">Impressum</Link>
+      </footer>
     </main>
   );
 }

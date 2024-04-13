@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import React from "react";
 import {Toaster} from "@/components/ui/toaster";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Jahid Uddin",

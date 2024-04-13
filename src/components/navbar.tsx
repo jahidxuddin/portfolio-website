@@ -4,10 +4,19 @@ import {GithubIcon, InstagramIcon, MenuIcon, TwitterIcon} from "lucide-react";
 import Link from "next/link";
 import { MouseEvent } from "react";
 import {Button} from "@/components/ui/button";
+import {usePathname, useRouter} from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
+  const router = useRouter();
+
   const handleClick = (e: MouseEvent, elementToScrollId: string) => {
     e.preventDefault();
+
+    if (pathname !== "/") {
+      router.push("/");
+      return;
+    }
 
     const elementToScroll = document.getElementById(elementToScrollId);
     if (elementToScroll) {
