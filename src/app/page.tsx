@@ -6,7 +6,6 @@ import algorithmVisualisations from "@/../public/img/algorithm-visualisations.pn
 import flsVplanApp from "@/../public/img/fls-vplan-app.png";
 import ContactForm from "@/components/contact-form";
 import Link from "next/link";
-import {Button} from "@/components/ui/button";
 
 export default function Home() {
   return (
