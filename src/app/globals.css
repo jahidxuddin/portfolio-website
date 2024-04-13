@@ -145,6 +145,12 @@
   font-style: italic;
 }
 
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
