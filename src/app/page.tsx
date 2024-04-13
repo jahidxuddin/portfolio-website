@@ -2,6 +2,7 @@ import "react-vertical-timeline-component/style.min.css"
 import Timeline from "@/components/timeline";
 import {Card, CardContent, CardFooter, CardHeader} from "@/components/ui/card";
 import Image from "next/image";
+import portfolioWebseite from "@/../public/img/portfolio-webseite.png"
 import algorithmVisualisations from "@/../public/img/algorithm-visualisations.png";
 import flsVplanApp from "@/../public/img/fls-vplan-app.png";
 import ContactForm from "@/components/contact-form";
@@ -23,16 +24,29 @@ export default function Home() {
       <section id="projects" className="min-h-screen px-10 sm:px-32 xl:px-60 py-24 flex flex-col gap-5">
         <span className="text-2xl font-semibold">Webseiten</span>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          <Link target="_blank" href="https://algorithm-visualisations.vercel.app/">
-            <Card className="shadow-sm">
+          <Link target="_blank" href="https://algorithm-visualisations.vercel.app" className="flex flex-col">
+            <Card className="shadow-sm flex-grow">
               <CardContent>
-                <Image className="rounded-xl" src={algorithmVisualisations} alt="Algorithm Visualisations"/>
+                <Image className="rounded-xl h-full" src={algorithmVisualisations} alt="Algorithm Visualisations"/>
               </CardContent>
               <CardHeader className="text-2xl font-bold">
                 Algorithm Visualisations
               </CardHeader>
               <CardFooter className="text-slate-500">
-                A tool build with React and Tailwind CSS to visualize algorithms.
+                Ein Werkzeug um Algorithmen zu visualisieren.
+              </CardFooter>
+            </Card>
+          </Link>
+          <Link target="_blank" href="https://github.com/jahidxuddin/portfolio-website" className="flex flex-col">
+            <Card className="shadow-sm flex-grow">
+              <CardContent>
+                <Image className="rounded-xl h-full" src={portfolioWebseite} alt="Portfolio Webseite"/>
+              </CardContent>
+              <CardHeader className="text-2xl font-bold">
+                Portfolio Webseite
+              </CardHeader>
+              <CardFooter className="text-slate-500">
+                Diese Webseite zeigt meine Projekte als Hobby Entwickler.
               </CardFooter>
             </Card>
           </Link>
@@ -42,20 +56,20 @@ export default function Home() {
           <Link target="_blank" href="https://github.com/jahidxuddin/fls-vplan-app">
             <Card className="shadow-sm">
               <CardContent>
-                <Image className="rounded-xl" src={flsVplanApp} alt="Algorithm Visualisations"/>
+                <Image className="rounded-xl" src={flsVplanApp} alt="FLS-Vplan-App"/>
               </CardContent>
               <CardHeader className="text-2xl font-bold">
                 FLS-Vplan-App
               </CardHeader>
               <CardFooter className="text-slate-500">
-                A clone of the offical FLS-Vetretungsplan app from Florian Schmidt.
+                Ein Klon der offiziellen FLS-Vertretungsplan-App von Florian Schmidt.
               </CardFooter>
             </Card>
           </Link>
         </div>
       </section>
       <section id="contact" className="h-screen grid place-items-center px-10 sm:px-32 lg:px-0">
-        <ContactForm />
+        <ContactForm/>
       </section>
     </main>
   );
